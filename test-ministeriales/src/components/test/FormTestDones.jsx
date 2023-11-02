@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from "./CardDones.module.css";
-import GraphDones from "./graphDones";
+import GraphDones from "./GraphDones";
 
 const FormTestDones = () => {
   let [totA, setTotA] = useState(0);
