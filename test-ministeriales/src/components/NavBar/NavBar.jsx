@@ -19,7 +19,7 @@ const NavBar = () => {
       Test 1
       </a> */}
       <a href="/test2" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-      Test 2
+      Dones
       </a>
       {/* <a href="/test3" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
         Test 3

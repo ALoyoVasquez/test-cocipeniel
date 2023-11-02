@@ -4,12 +4,12 @@ import { useState } from "react";
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import "./App.css";
-import Dones from "./components/test/dones";
+// import Dones from "./components/test/dones";
 import NavBar from "./components/NavBar/NavBar";
 import FormTestDones from "./components/test/FormTestDones";
-import TestComponent from "./components/test/TestComponent";
-import GraphDones from "./components/test/graphDones";
-
+// import TestComponent from "./components/test/TestComponent";
+// import GraphDones from "./components/test/graphDones";
+// import MixedChart from "./components/test/MixedChart";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -24,9 +24,9 @@ function App() {
         <NavBar />
         <Routes>
           {/* <Route path="/" element={<Dones />} /> */}
-          <Route path="/test" element={<Dones />} />
+          {/* <Route path="/test" element={<Dones />} /> */}
           <Route path="/test2" element={<FormTestDones />} />
-          <Route path="/test3" element={<TestComponent />} />
+          {/* <Route path="/test3" element={<TestComponent />} /> */}
           
           {/* <Route path="/graph2" element={<GraphDones
           a={5}
@@ -38,7 +38,7 @@ function App() {
         <Route path="/error" element={<ErrorView />} />
         <Route path="*" element={<Navigate to="/error" replace />} /> */}
         </Routes>
-        
+        {/* <MixedChart/> */}
       </div>
     </>
   );
