@@ -1,0 +1,35 @@
+.contenedorGraficos{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.grafico1{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-content: "center";  
+    align-items: "center";
+    /* padding: 2rem; */
+}
+
+.grafico2{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-content: "center";  
+    align-items: "center";
+    padding: 2rem;
+}
+@media (width <= 400px) {
+    .contenedorGraficos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grafico2{
+        background-color: rgb(255, 255, 255);
+    }
+
+}

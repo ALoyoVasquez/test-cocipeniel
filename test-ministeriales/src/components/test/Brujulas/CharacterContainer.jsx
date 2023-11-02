@@ -83,6 +83,7 @@ const CharacterContainer = () => {
               nombre={p.nombre}
               color={p.color}
               caracteristica={p.caracteristica}
+              grafico={p.grafico}
             />
           );
         })}

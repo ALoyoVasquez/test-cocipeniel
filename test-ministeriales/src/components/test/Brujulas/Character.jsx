@@ -2,15 +2,17 @@ import React from "react";
 import style from "./Character.module.css";
 import imagen from "../../../assets/soyHenry400x400.jpg";
 
-const Character = ({ id, nombre, color, caracteristica }) => {
+const Character = ({ id, nombre, color, caracteristica, grafico }) => {
   
-  // const colores = color;
-  // console.log(colores);
+  const DIR = "./src/assets/"+grafico;
+  // console.log(grafico)
+
+  // console.log(DIR);
 
   return (
     <div className={style.layout}>
-      <img src={imagen} alt="grafico" className={style.grafico} />
-      <div>
+      <img src={DIR} alt="grafico" className={style.grafico} />
+      <div className={style.brujula}>
         <div className={style.nombre}>{nombre} </div>
         <div className={style.pc}>
           <div className={style.partida}>Punto de Partida: <strong>{id}</strong></div>

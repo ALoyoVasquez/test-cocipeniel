@@ -72,7 +72,7 @@
     flex-direction: column;
   }
   .instrucciones {
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
     width: 100%;
     margin: 0.25rem;
     font-size: small;

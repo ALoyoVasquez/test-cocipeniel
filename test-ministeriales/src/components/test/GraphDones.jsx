@@ -1,4 +1,5 @@
 import React from "react";
+import style from "./GraphDones.module.css"
 //? GRAPHICS
 import {
   Chart as CharJs,
@@ -69,15 +70,22 @@ const GraphDones = (props) => {
 
 
   return (
-    <>
-      <div style={{alignContent: "center", alignItems: "center",  width: "500px", padding: "20px", }} >
+    <div className={style.contenedorGraficos}>
+      <div className={style.grafico1} >
+      {/* <div style={{alignContent: "center", alignItems: "center",  width: "500px", padding: "20px", }} > */}
         <Radar data={data} options={options} />
       </div>
-      <div style={{  alignContent: "center",  alignItems: "center",  width: "500px",  padding: "20px",}} >
+      {/* <div style={{  alignContent: "center",  alignItems: "center",  width: "500px",  padding: "20px",}} > */}
+      <div className={style.grafico2} >
         {/* <Radar data={data} options={options} /> */}
         <PolarArea data={data2} options={options} />
+        <div>
+          <strong>A: </strong>COLOR AZUL <br />
+          <strong>B: </strong>COLOR VERDE<br />
+          <strong>C: </strong>COLOR ROJO<br />
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 
