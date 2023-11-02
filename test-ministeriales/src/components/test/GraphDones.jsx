@@ -82,6 +82,3 @@ const GraphDones = (props) => {
 };
 
 export default GraphDones;
-
-// export default function Example() {
-//

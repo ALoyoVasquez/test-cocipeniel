@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import style from "./CardDones.module.css";
 import GraphDones from "./GraphDones";
 
+import CharacterContainer from "./Brujulas/CharacterContainer";
+
 const FormTestDones = () => {
   let [totA, setTotA] = useState(0);
   let [totB, setTotB] = useState(0);
@@ -47,32 +49,17 @@ const FormTestDones = () => {
       if (colA !== "col3A" && colA !== "col7A") {
         totalA = totalA + Number(fila1);
         setTotA(totalA);
-        // console.log("Fila: " + colA);
       }
 
       if (colB !== "col5B" && colB !== "col10B") {
         totalB = totalB + Number(fila2);
         setTotB(totalB);
-        // console.log("Fila: " + colB);
       }
       if (colC !== "col2C" && colC !== "col9C") {
         totalC = totalC + Number(fila3);
         setTotC(totalC);
-        // console.log("Fila: " + colC);
       }
-      // console.log(totalA);
     }
-    // console.log("TA: " + totA);
-    // console.log("TB: " + totB);
-    // console.log("TC: " + totC);
-
-    // console.log("Total A: " + totA);
-
-    // let totalA = document.getElementById("totA");
-    // let totalB = document.getElementById("totB").value;
-    // let totalC = document.getElementById("totC").value;
-    // totalA.innerText = totA;
-    // return totA, totB, totC;
   };
 
   return (
@@ -531,6 +518,7 @@ const FormTestDones = () => {
       <div className={style.grafico}>
         <GraphDones a={totA} b={totB} c={totC} />;
       </div>
+        <CharacterContainer />
     </>
   );
 };
