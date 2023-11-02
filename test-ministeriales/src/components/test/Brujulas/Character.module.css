@@ -1,0 +1,77 @@
+.layout {
+  display: flex;
+  width: 35rem;
+  padding: 0.77275rem;
+  align-items: flex-start;
+  gap: 0.6955rem;
+  border-radius: 0.77275rem;
+  background: rgba(211, 211, 211, 0.4);
+  margin: 0.15rem;
+}
+
+.grafico {
+  width: 6rem;
+  height: 6rem;
+  flex-shrink: 0;
+  border-radius: 0.38638rem;
+  background: #d9d9d9;
+}
+
+.nombre {
+  width: 3.25rem;
+  color: #000;
+  font-family: DM Sans;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.77738rem; /* 209.091% */
+  letter-spacing: -0.0085rem;
+}
+
+.partida {
+    /* width: 3.25rem; */
+    color: #000;
+    font-family: DM Sans;
+    font-size: 0.9rem;
+    /* font-style: normal;
+    font-weight: 500;
+    line-height: 1.77738rem; /* 209.091% */
+    /* letter-spacing: -0.0085rem; */ 
+}
+
+.caracteristica {
+  /* width: 9.875rem; */
+  color: #333333;
+  font-family: Inter;
+  font-size: 0.9rem;
+  font-style: normal;
+  text-align: justify;
+  /* font-weight: 400;
+  line-height: 0.70956rem; /* 125% */
+  /* letter-spacing: -0.00569rem;  */
+}
+
+.squareV {
+  background: green;
+  width: 30px;
+  height: 30px;
+}
+.squareR {
+  background: red;
+  width: 30px;
+  height: 30px;
+}
+.squareA {
+  background: blue;
+  width: 30px;
+  height: 30px;
+}
+
+.pc{
+    background-color: aqua;
+    display: flex; 
+    justify-content: space-between;
+    padding: auto;   
+    margin: 0.15rem;
+}
+

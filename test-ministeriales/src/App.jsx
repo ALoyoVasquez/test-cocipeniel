@@ -26,6 +26,7 @@ function App() {
           {/* <Route path="/" element={<Dones />} /> */}
           {/* <Route path="/test" element={<Dones />} /> */}
           <Route path="/test2" element={<FormTestDones />} />
+         
           {/* <Route path="/test3" element={<TestComponent />} /> */}
           
           {/* <Route path="/graph2" element={<GraphDones
@@ -38,6 +39,7 @@ function App() {
         <Route path="/error" element={<ErrorView />} />
         <Route path="*" element={<Navigate to="/error" replace />} /> */}
         </Routes>
+        <FormTestDones />
         {/* <MixedChart/> */}
       </div>
     </>
