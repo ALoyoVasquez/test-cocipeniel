@@ -515,6 +515,9 @@ const FormTestDones = () => {
           </div>
         </div>
       </div>
+      <br />
+      <hr />
+      <br />
       <div className={style.grafico}>
         <GraphDones a={totA} b={totB} c={totC} />;
       </div>
