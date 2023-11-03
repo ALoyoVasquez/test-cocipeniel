@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./GraphDones.module.css"
+import example from "../../assets/example.png"
 //? GRAPHICS
 import {
   Chart as CharJs,
@@ -49,24 +50,39 @@ const GraphDones = (props) => {
     datasets: [
       {
         label: "A",
-        data: [15 , 15, 15,15,15,15],
+        data: [b,c,a],
         // data: [5 , 10, 13],
         backgroundColor: [
           "rgba(79, 218, 35, 0.4)", //verde
           // "rgba(35, 96, 218, 0.4)", //azul
           "rgba(229, 17, 17 , 0.4)", //rojo
-          "rgba(229, 17, 17 , 0.4)", //rojo
+          // "rgba(229, 17, 17 , 0.4)", //rojo
           "rgba(35, 96, 218, 0.54)", //azul
-          "rgba(35, 96, 218, 0.54)", //azul
+          // "rgba(35, 96, 218, 0.54)", //azul
           // "rgba(79, 218, 35, 0.54)", //verde
           // "rgba(229, 17, 17 , 0.54)", //rojo
-          "rgba(79, 218, 35, 0.4)", //verde
+          // "rgba(79, 218, 35, 0.4)", //verde
         ],
         borderWidth: 0,
       },
     ],
   };
-  const options = {};
+  // const options = {};
+  const options =  {
+    scales: { // <-- Note change in options from scale to scales
+        r: {
+          grid: {
+             circular: true
+          },
+          min: 0,
+          max: 15,
+          beginAtZero: true,
+        
+        ticks:
+          {stepSize: 1}
+        }
+    }
+  }
 
 
   return (
@@ -78,11 +94,18 @@ const GraphDones = (props) => {
         {/* <Radar data={data} options={options} /> */}
         <PolarArea data={data2} options={options} />
         <div>
-          <strong>A: </strong>COLOR AZUL 
-          <strong> B: </strong>COLOR VERDE
-          <strong> C: </strong>COLOR ROJO<br />
+          <strong className={style.grupoA}>A: </strong>COLOR AZUL 
+          <strong className={style.grupoB}> B: </strong>COLOR VERDE
+          <strong className={style.grupoC}> C: </strong>COLOR ROJO<br />
         </div>
       </div>
+        <div>
+          Ejemplo
+          <img src={example} alt="example" className={style.example} />
+          <div>
+            En este caso los Colores predominantes son el Azul y el Rojo. Buscamos el Punto de partida con estos colores.
+          </div>
+        </div>
     </div>
   );
 };
